@@ -1,0 +1,9 @@
+body {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.message {
+    font-family: Courier New, Courier, monospace;
+    font-weight: bold;
+}

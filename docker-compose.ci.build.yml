@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+    ci-build:
+        image: microsoft/dotnet:1.0.0-preview2.1-sdk
+        volumes:
+            - ./service-b:/src
+        working_dir: /src
+        command: /bin/bash -c "dotnet restore && dotnet publish -c Release -o bin ."

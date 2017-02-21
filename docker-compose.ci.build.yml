@@ -2,7 +2,7 @@ version: "2"
 
 services:
     ci-build:
-        image: microsoft/dotnet:1.0.0-preview2.1-sdk
+        image: microsoft/dotnet:1.0.1-sdk-projectjson
         volumes:
             - ./service-b:/src
         working_dir: /src
